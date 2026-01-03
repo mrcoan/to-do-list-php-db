@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .5s;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+small {
+    display: block;
+    margin: 5px 0;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+form {
+    margin: 10px 0;
+}
+
+input,
+textarea {
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 75%;
+}
+
+#pendente,
+#concluido {
+    display: inline-block;
+
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+hr {
+    width: 50%;
+    border: none;
+    height: 1px;
+    margin: 10px 0;
+    background-color: #ccc;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+header img {
+    max-width: 50px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar a {
+    margin: 0 10px;
+}
+
+#navbar img {
+    max-width: 30px;
+}
+
+.tarefas {
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.card {
+    height: 100%;
+    padding: 20px 10px;
+}
+
+.card-pendente {
+    border: 1px solid #dfd548;
+}
+
+.card-concluida {
+    border: 1px solid #00a8c6;
+}
+
+.acoes {
+    margin: 10px 0;
+}
+
+.btn-acao {
+    padding: 10px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.btn-concluir,
+.btn-adicionar {
+    background-color: #00a8c6;
+}
+
+.btn-editar {
+    background-color: #3baa40;
+}
+
+.btn-excluir {
+    background-color: #e07767;
+}
+
+.btn-voltar {
+    background-color: #161616;
+}
+
+
+
+
+.status-pendente {
+    padding: 5px;
+    display: inline-block;
+    background-color: #dfd548;
+    color: #fff;
+}
+
+.status-concluida {
+    padding: 5px;
+    display: inline-block;
+    background-color: #00a8c6;
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+
+    .container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+}
